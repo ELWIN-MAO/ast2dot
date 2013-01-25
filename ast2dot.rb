@@ -1,7 +1,7 @@
 #!/opt/local/bin/ruby
 
 #########################################################################################
-# Created by: Dannie M. Stanley <dannie.stanley@gmail.com>
+# Created by: Dannie M. Stanley <dannie.stanley|@|gmail.com>
 # License: GPLv2
 # Purpose: Convert GCC AST raw dump to the DOT graphing language for visualization
 #

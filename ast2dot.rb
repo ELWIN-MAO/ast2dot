@@ -24,7 +24,11 @@
 
 $dotreader = 'open -a OmniGraffle\ 5.app'
 $skip_attributes = ['size', 'scpe', 'max', 'min', 'bpos']
-$root_node = 4
+#$root_node = 16
+
+if ARGV[1] != nil then
+    $root_node = ARGV[1].to_i
+end
 
 class Node
     attr_accessor :id, :attribs, :typename, :display, :visited
@@ -212,7 +216,7 @@ File.open(ARGV[0], "r") do |f|
 end
 
 if ($root_node != nil) then
-	g.mark_desc(4)
+	g.mark_desc($root_node)
 end
 
 g.viz
